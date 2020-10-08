@@ -1105,6 +1105,7 @@ body ul {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: contain;
   overflow: hidden;
 }
 .post .post-item .post-wrap .post-image img,
@@ -1156,6 +1157,7 @@ body ul {
 }
 .article .wrap .head {
   position: relative;
+  text-align: center;
 }
 .article .wrap .head .head-mask {
   position: absolute;
