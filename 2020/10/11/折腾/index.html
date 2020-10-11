@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>折腾 - TimeBean</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+
+  
+  <meta name="keywords" content=", cos,blog"> 
+  
+  <meta name="description" content="手动写相册路径实在是太痛苦了。。
+
+
+起因最近搞了博客..."> 
+  
+  <meta name="author" content="TimeBean"> 
+
+  
+    <link rel="icon" href="/images/icons/favicon.svg" type="image/png" sizes="16x16">
+  
+  
+    <link rel="icon" href="/images/icons/favicon.svg" type="image/png" sizes="32x32">
+  
+  
+    <link rel="apple-touch-icon" href="/images/icons/favicon.svg" sizes="180x180">
+  
+  
+    <meta rel="mask-icon" href="/images/icons/favicon.svg" color="#333333">
+  
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/favicon.svg">
+    <meta rel="msapplication-TileColor" content="#000000">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_hhodbqn7tit.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css">
+
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      lazyload: {
+        enable: true,
+        loadingImage: '/images/theme/loading.gif',
+      },
+      donate: {
+        enable: false,
+        alipay: '',
+        wechat: ''
+      },
+      motto: {
+        api: '',
+        default: '我在开了灯的床头下，想问问自己的心啊。'
+      },
+      galleries: {
+        enable: true
+      },
+      fab: {
+        enable: true,
+        alwaysShow: false
+      },
+      carrier: {
+        enable: false
+      },
+      daovoice: {
+        enable: false
+      }
+    }
+  </script>
+
+  
+
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body class="lock-screen">
+  <div class="loading"></div>
+  
+
+
+<nav class="navbar">
+  <div class="left"></div>
+  <div class="center">折腾</div>
+  <div class="right">
+    <i class="iconfont iconmenu j-navbar-menu"></i>
+  </div>
+</nav>
+
+  <nav class="menu">
+  <div class="menu-wrap">
+    <div class="menu-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <ul class="menu-content">
+      
+      
+      
+      
+      <li class="menu-item"><a href="/ " class="underline"> 首页</a></li>
+      
+      
+      
+      
+      <li class="menu-item"><a href="/galleries " class="underline"> 影像</a></li>
+      
+      
+      
+      
+      <li class="menu-item"><a href="/archives " class="underline"> 归档</a></li>
+      
+      
+      
+      
+      <li class="menu-item"><a href="/tags " class="underline"> 标签</a></li>
+      
+      
+      
+      
+      <li class="menu-item"><a href="/categories " class="underline"> 分类</a></li>
+      
+      
+      
+      
+      <li class="menu-item"><a href="/about " class="underline"> 关于</a></li>
+      
+    </ul>
+    <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  </p></div>
+  </div>
+</nav>
+  <main id="main">
+  <div class="container" id="container">
+    <article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img src="https://blog-1259194304.file.myqcloud.com/KKSK/jisoo~.jpg" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">折腾</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>October 11, 2020</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconeye"></i><span id="/2020/10/11/%E6%8A%98%E8%85%BE/"
+          class="leancloud" data-flag-title="折腾"></span></span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>3310</span>
+    </div>
+  </div>
+</section>
+    <section class="main">
+      <section class="content">
+        <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>最近搞了博客，然后从hexo里选了个带相册的主题。我lsp了，所以应该会存很多图吧。</p>
+<p>考虑到加载速度的原因，因为图片太多，就只能搞个图床，这里选择的是腾讯云的对象存储，然后配上cdn分发网络，速度还算不错。</p>
+<p>以后可以快乐的当一个lsp了(并不是</p>
+<h3 id="痛苦的开端"><a href="#痛苦的开端" class="headerlink" title="痛苦的开端"></a>痛苦的开端</h3><p>由于hexo是静态页面对吧，所以相册的路径都要写死在一个<code>JSON</code>文件里，所以每次更新相册我经历了如下步骤：  </p>
+<ol>
+<li>传文件到图床，而且要把名字修改得规规整整，不然手写json的时候写出大问题</li>
+<li>然后开始抄写文件，如果有新相册还要建立对应的页面markdown…</li>
+</ol>
+<p>光是听我说估计都有点抓狂，从此欣赏漂亮小姐姐变成了一件痛苦的事。。</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>正好最近痴迷于 <code>解放生产力</code>这个词语，虽然我是个菜b，但也想过的轻松点。永远不尝试造轮子的下场只有一个，<strong>我学过很多工具，但仍过不好程序员的一生。</strong></p>
+<p>我的思路首先是通过一个api拿到文件路径和文件名之类的信息，打开腾讯云对象存储文档，果不其然，这类的api人家早已备好，多种语言，任君选择。</p>
+<p>到目前为止我还是很满意的，我比较熟悉node（并不）,就选择<a target="_blank" rel="noopener" href="https://cloud.tencent.com/document/product/436/8629">node SDK</a>吧。</p>
+<p>查看文档，可以看到如下几个api</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs javascript">cos.getService(&#123;<br>    Region: <span class="hljs-string">&#x27;COS_REGION&#x27;</span>,<br>&#125;, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, data</span>) </span>&#123;<br>    <span class="hljs-built_in">console</span>.log(err || data);<br>&#125;);<br><span class="hljs-comment">//通过这个可以拿到存储桶的列表</span><br><br>cos.getBucket(&#123;<br>    Bucket: <span class="hljs-string">&#x27;examplebucket-1250000000&#x27;</span>, <span class="hljs-comment">/* 必须 */</span><br>    Region: <span class="hljs-string">&#x27;COS_REGION&#x27;</span>,     <span class="hljs-comment">/* 必须 */</span><br>    Prefix: <span class="hljs-string">&#x27;a/&#x27;</span>,           <span class="hljs-comment">/* 非必须 */</span><br>&#125;, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, data</span>) </span>&#123;<br>    <span class="hljs-built_in">console</span>.log(err || data.Contents);<br>&#125;);<br><span class="hljs-comment">//通过这个可以拿到想要的文件列表</span><br></code></pre></td></tr></table></figure>
+
+<p>就我目前的需求来说，这两个api已经足够了，内心狂喜。<br>解放生产力只有一步之遥了（并不。</p>
+<p>但我拿到api返回的数据时，我人都傻了，居然没有层级，只有相对于存储桶url地址路径的字符串，<strong>他们是同级的</strong>。</p>
+<p>看到这里我忍不住鼓掌，不愧是你，腾讯。行吧， 只有自己写一个映射层级的函数了呗。由于我的相册文件夹只有一层，因此也没做什么递归，深度遍历的处理。下面上代码。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;request&quot;</span>);<br><span class="hljs-keyword">const</span> COS = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;cos-nodejs-sdk-v5&quot;</span>);<br><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;path&quot;</span>);<br><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;fs&quot;</span>);<br><span class="hljs-comment">//相册基本结构，用ts写应该更香，奈何我ts模块这一块，拿捏得不到位，草率了</span><br><span class="hljs-keyword">const</span> baseObj = &#123;<br>  name: <span class="hljs-string">&quot;&quot;</span>,<br>  baseUrl: <span class="hljs-string">&quot;example.com/galleries&quot;</span>,<br>  cover: <span class="hljs-string">&quot;&quot;</span>,<br>  description: <span class="hljs-string">&quot;&quot;</span>,<br>  photos: [],<br>&#125;;<br><br><span class="hljs-keyword">const</span> jsonPath = <span class="hljs-string">&quot;xxx/galleries.json&quot;</span>;<br><span class="hljs-keyword">const</span> Bucket = &#123;&#125;;<br><span class="hljs-keyword">const</span> galleries = <span class="hljs-built_in">JSON</span>.parse(fs.readFileSync(jsonPath));<br><span class="hljs-comment">//获取Bucket信息</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getBucketInfo</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">res, rej</span>) =&gt;</span> &#123;<br>    cos.getService(<span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> &#123;<br>      err ? rej(err) : res(data.Buckets[<span class="hljs-number">0</span>]);<br>    &#125;);<br>  &#125;);<br>&#125;<br><span class="hljs-comment">//获取文件列表</span><br><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFileList</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">try</span> &#123;<br>    <span class="hljs-keyword">let</span> contents = <span class="hljs-keyword">await</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">res, rej</span>) =&gt;</span> &#123;<br>      cos.getBucket(<br>        &#123;<br>          Bucket: Bucket.Name,<br>          Region: Bucket.Location,<br>          Prefix: <span class="hljs-string">&quot;galleries/&quot;</span>,<br>        &#125;,<br>        (err, data) =&gt; &#123;<br>          <span class="hljs-comment">//   console.log(err||data.Contents)</span><br>          err ? rej(err) : res(data.Contents);<br>        &#125;<br>      );<br>    &#125;);<br>    <span class="hljs-keyword">return</span> contents;<br>  &#125; <span class="hljs-keyword">catch</span> (e) &#123;<br>    <span class="hljs-built_in">console</span>.log(e);<br>  &#125;<br>&#125;<br><span class="hljs-comment">//初始化</span><br><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">init</span>(<span class="hljs-params"></span>) </span>&#123;<br>  <span class="hljs-keyword">try</span> &#123;<br>    <span class="hljs-built_in">Object</span>.assign(Bucket, <span class="hljs-keyword">await</span> getBucketInfo());<br>    refreshGalleries();<br>  &#125; <span class="hljs-keyword">catch</span> (e) &#123;<br>    <span class="hljs-built_in">console</span>.log(e);<br>  &#125;<br>&#125;<br><span class="hljs-comment">//查询相册是否已经存在</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEXists</span>(<span class="hljs-params">name</span>) </span>&#123;<br>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> [index, item] <span class="hljs-keyword">of</span> galleries.entries()) &#123;<br>    <span class="hljs-built_in">console</span>.log(item.name)<br>    <span class="hljs-built_in">console</span>.log(index)<br>    <span class="hljs-keyword">return</span> item.name === name ? index : <span class="hljs-literal">false</span>;<br>  &#125;<br>  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span><br>&#125;<br><span class="hljs-comment">//建立对应相册MarkDown</span><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buildGallery</span>(<span class="hljs-params">name</span>) </span>&#123;<br>  <span class="hljs-keyword">let</span> model = fs.readFileSync(<span class="hljs-string">&quot;./burket/index.md&quot;</span>, &#123; <span class="hljs-attr">encoding</span>: <span class="hljs-string">&quot;utf-8&quot;</span> &#125;);<br>  model = model.replace(<span class="hljs-string">&quot;name&quot;</span>, name);<br><br>  fs.writeFileSync(<span class="hljs-string">`./source/galleries/<span class="hljs-subst">$&#123;name&#125;</span>/index.md`</span>, model);<br>&#125;<br><span class="hljs-comment">//更新相册</span><br><br><br>init();<br><br></code></pre></td></tr></table></figure>
+<p>好了水文一篇，整个todo-list，糊弄下自己</p>
+<ul>
+<li><p><input disabled="" type="checkbox">  自动上传文件，思路大概是，把要上传的文件丢到某个文件夹，上传后自动删除。</p>
+</li>
+<li><p><input disabled="" type="checkbox">  整个远程访问的页面，这样我就可以在手机上写博文，更新相册了。</p>
+</li>
+</ul>
+<p>顺便吐槽一下自己，有这些功夫还用hexo？sorry啊，事逼就是可以为所欲为</p>
+      </section>
+      <section class="extra">
+        
+        <ul class="copyright">
+  
+  <li><strong>本文作者：</strong>TimeBean</li>
+
+  <li><strong>版权声明：</strong>本博客所有文章均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+      rel="external nofollow" target="_blank"> BY-NC-SA </a>许可协议，转载请注明出处！</li>
+  
+</ul>
+        
+        
+        
+        
+<nav class="nav">
+  
+  
+    <a href="/2020/10/09/%E5%9B%9E%E6%9C%9B%E6%9C%80%E8%BF%91/">回望最近<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+      </section>
+      
+      <section class="comments">
+  
+  <div class="btn" id="comments-btn">查看评论</div>
+  
+  
+<div id="valine"></div>
+<script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  window.onload = function () {
+    var loadValine = function () {
+      new Valine({
+        el: '#valine',
+        app_id: "hGSOnIinIWmuUisDzUhraDW6-gzGzoHsz",
+        app_key: "wrVST8woWW7N6drjWrlXIvBW",
+        placeholder: "来都来了...",
+        avatar: "retro",
+        pageSize: "10",
+        lang: "zh-CN",
+      });
+    }
+    if ( true ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        loadValine();
+      });
+    } else {
+      loadValine();
+    }
+  };
+</script>
+
+</section>
+      
+    </section>
+  </div>
+</article>
+  </div>
+</main>
+  <footer class="footer">
+  <div class="footer-social">
+    
+    
+    
+    
+    
+    <a href="https://www.instagram.com/timebean8/ " target="_blank" onMouseOver="this.style.color= '#DA2E76'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconinstagram "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://github.com/s33you " target="_blank" onMouseOver="this.style.color= '#24292E'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  icongithub-fill "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="mailto:wuuseyi@163.com " target="_blank" onMouseOver="this.style.color='#339999'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconmail"></i>
+    </a>
+    
+  </div>
+  <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  </p></div>
+</footer>
+  
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
+  
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  
+</body>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+<script src="/js/utils.js"></script>
+<script src="/js/modules.js"></script>
+<script src="/js/zui.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+<script>
+  $.getScript("//cdn.jsdelivr.net/npm/leancloud-storage@4.1.0/dist/av-min.js", () => {
+
+    AV.init({
+      appId: 'hGSOnIinIWmuUisDzUhraDW6-gzGzoHsz',
+      appKey: 'wrVST8woWW7N6drjWrlXIvBW',
+      serverURLs: 'https://hgsoniin.lc-cn-n1-shared.com',
+    });
+
+    const showCount = (Counter) => {
+      const asyncLimit = new AsyncLimit(2);
+      $(".leancloud").each(async (e) => {
+        const url = $(".leancloud").eq(e).attr('id').trim();
+        const query = new AV.Query("Counter");
+        query.equalTo("words", url);
+        let count = await asyncLimit.run(() => query.count());
+        $(".leancloud").eq(e).text(count ? count : '--');
+      });
+    }
+
+    const addCount = (Counter) => {
+      const url = $(".leancloud").length === 1 ? $(".leancloud").attr('id').trim() : 'https://s33you.github.io';
+      var query = new Counter;
+      query.save({
+        words: url
+      });
+    }
+
+    $(function () {
+      const Counter = AV.Object.extend("Counter");
+      addCount(Counter);
+      showCount(Counter);
+    });
+    
+  });
+</script>
+
+
+
+
+
+<script>
+  (function () {
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    } else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+<script>
+  // var _hmt = _hmt || [];
+  // (function () {
+  //   var hm = document.createElement("script");
+  //   hm.src = "https://hm.baidu.com/hm.js?4c204d8bc027a0455b5fc642ac334ca8";
+  //   var s = document.getElementsByTagName("script")[0];
+  //   s.parentNode.insertBefore(hm, s);
+  // })();
+</script>
+
+
+
+
+
+
+
+
+
+
+</html>
