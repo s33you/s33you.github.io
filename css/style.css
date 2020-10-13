@@ -624,6 +624,12 @@ body ul {
     max-width: 100%;
   }
 }
+@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url("webfont.eot"); /* IE9 */
+  src: url("webfont.eot?#iefix") format('embedded-opentype'), url("webfont.woff2") format('woff2'), url("webfont.woff") format('woff'), url("webfont.ttf") format('truetype'), url("webfont.svg#webfont") format('svg'); /* iOS 4.1- */
+}
 .lazyload {
   background: url("/images/theme/loading.gif") no-repeat center;
 }
@@ -683,7 +689,7 @@ body ul {
 .preview .preview-image .preview-motto,
 .preview .preview-image .preview-cursor {
   font-size: 3.5em;
-  font-family: 'Quicksand', 'Vollkorn', serif;
+  font-family: "web-font";
   font-weight: 300;
   color: #fff;
   margin: 20px;
