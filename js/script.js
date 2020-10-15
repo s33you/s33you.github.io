@@ -35,12 +35,10 @@ function getMoto(){
     activeFab: function () {
       $(".fab-up").addClass("fab-up-active");
       $(".fab-plus").addClass("fab-plus-active");
-      $(".fab-daovoice").addClass("fab-daovoice-active");
     },
     freezeFab: function () {
       $(".fab-up").removeClass("fab-up-active");
       $(".fab-plus").removeClass("fab-plus-active");
-      $(".fab-daovoice").removeClass("fab-daovoice-active");
     },
     showFab: function () {
       $(".fab").removeClass("fab-hide").addClass("fab-show");
@@ -72,12 +70,12 @@ function getMoto(){
             var after = $(this).scrollTop();
             if (before > after && after > 300) {
               $(".navbar").removeClass("hide");
-            } else if (before < after || after < 300) {
+            } else if (before <after || after < 300) {
               $(".navbar").addClass("hide");
             }
             before = after;
           })
-        }, 500));
+        }, 800));
       },
       desktop: function () {
         function center() {
@@ -100,7 +98,7 @@ function getMoto(){
             }
             before = after;
           })
-        }, 500));
+        }, 800));
       },
     }
   }
@@ -134,13 +132,6 @@ function getMoto(){
         } else {
           fn.activeFab();
         }
-      });
-      $(".fab-daovoice").on("click", function () {
-        daovoice('openMessages');
-        fn.freezeFab();
-      });
-      $(".fab-up .fab-daovoice").on("click", function () {
-        fn.freezeFab();
       });
       if (CONFIG.fab.alwaysShow) {
         fn.showFab();
