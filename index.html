@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://github.com/s33you/s33you.github.io/favicon.ico"><link rel="stylesheet" href="//at.alicdn.com/t/font_1690502_9opdm0rrznj.css"><title>vue3-blog</title><link href="https://github.com/s33you/s33you.github.io/css/chunk-fd3fa46e.bddd2bfa.css" rel="prefetch"><link href="https://github.com/s33you/s33you.github.io/js/chunk-fd3fa46e.8fd16af4.js" rel="prefetch"><link href="https://github.com/s33you/s33you.github.io/css/app.c2653d1a.css" rel="preload" as="style"><link href="https://github.com/s33you/s33you.github.io/js/app.8c9e3e94.js" rel="preload" as="script"><link href="https://github.com/s33you/s33you.github.io/js/chunk-vendors.d66c3f54.js" rel="preload" as="script"><link href="https://github.com/s33you/s33you.github.io/css/app.c2653d1a.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but vue3-blog doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>var page_progress = 0
+        var sum = 0
+        let links = document.getElementsByTagName("link");
+
+        for (let i = 0; i < links.length; i++) {
+          links.item(i).onload = () => {
+            setTimeout(() => {
+              if (page_progress != 1) {
+                page_progress = ((++sum) / links.length).toFixed(2)
+              }
+            }, 60)
+          };
+        }
+        document.onreadystatechange = e => {
+          console.log(document.readyState)
+          if (document.readyState === 'complete') {
+            page_progress = 1
+          }
+        }</script><script src="https://github.com/s33you/s33you.github.io/js/chunk-vendors.d66c3f54.js"></script><script src="https://github.com/s33you/s33you.github.io/js/app.8c9e3e94.js"></script></body></html>
