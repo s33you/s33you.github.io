@@ -666,7 +666,7 @@ body ul {
   height: 90vh;
   width: 100%;
   background-color: #fffff0 0;
-  background-image: url("blog-1259194304.file.myqcloud.com/blogs/header_pc.jpg");
+  background-image: url("https://blog-1259194304.file.myqcloud.com/blogs/header_pc.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -678,12 +678,12 @@ body ul {
 }
 @media (min-width: 768px) {
   .preview .preview-image {
-    background-image: url("blog-1259194304.file.myqcloud.com/blogs/header_pc.jpg");
+    background-image: url("https://blog-1259194304.file.myqcloud.com/blogs/header_pc.jpg");
   }
 }
 @media (max-width: 767px) {
   .preview .preview-image {
-    background-image: url("blog-1259194304.file.myqcloud.com/blogs/header_mobile.jpg");
+    background-image: url("https://blog-1259194304.file.myqcloud.com/blogs/header_mobile.jpg");
   }
 }
 .preview .preview-image .preview-motto,
