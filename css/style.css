@@ -678,12 +678,12 @@ body ul {
 }
 @media (min-width: 768px) {
   .preview .preview-image {
-    background-image: url("https://blog-1259194304.file.myqcloud.com/blog/header_pc_2.jpg");
+    background-image: url("https://blog-1259194304.cos.ap-chengdu.myqcloud.com/blogs/header_pc.jpg");
   }
 }
 @media (max-width: 767px) {
   .preview .preview-image {
-    background-image: url("https://blog-1259194304.file.myqcloud.com/blog/header_mobile.jpg");
+    background-image: url("https://blog-1259194304.cos.ap-chengdu.myqcloud.com/blogs/header_mobile.jpg");
   }
 }
 .preview .preview-image .preview-motto,
